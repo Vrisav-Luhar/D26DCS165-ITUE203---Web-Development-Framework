@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "question": "What is StudentHub?",
+        "category": "General",
+        "answer": "StudentHub is a college student portal designed to provide students, faculty and administrators with access to academic and campus-related services."
+    },
+    {
+        "id": 2,
+        "question": "How can I register on StudentHub?",
+        "category": "Account",
+        "answer": "You can register by opening the Registration page and submitting the required information."
+    },
+    {
+        "id": 3,
+        "question": "How can I login to StudentHub?",
+        "category": "Account",
+        "answer": "Open the Login page and enter your registered credentials."
+    },
+    {
+        "id": 4,
+        "question": "Can students edit their attendance?",
+        "category": "Attendance",
+        "answer": "Students can view their attendance but official attendance records cannot be edited by students."
+    },
+    {
+        "id": 5,
+        "question": "Can students view their results?",
+        "category": "Academic",
+        "answer": "Yes. Students can view their academic results through the student dashboard."
+    },
+    {
+        "id": 6,
+        "question": "How can I apply for leave?",
+        "category": "Leave",
+        "answer": "Students can submit a leave request through the leave request section of the student portal."
+    },
+    {
+        "id": 7,
+        "question": "How can I submit a grievance?",
+        "category": "Grievance",
+        "answer": "Students can submit grievances through the grievance section available in StudentHub."
+    },
+    {
+        "id": 8,
+        "question": "Can I view my fee receipt?",
+        "category": "Fees",
+        "answer": "Yes. Students can access their available fee receipt from the student portal."
+    },
+    {
+        "id": 9,
+        "question": "How can I apply for a hall ticket?",
+        "category": "Examination",
+        "answer": "Eligible students can apply for their hall ticket through the hall ticket section."
+    },
+    {
+        "id": 10,
+        "question": "Can faculty update attendance?",
+        "category": "Attendance",
+        "answer": "Authorized faculty members can manage attendance for the students assigned to them."
+    },
+    {
+        "id": 11,
+        "question": "What can an administrator manage?",
+        "category": "Administration",
+        "answer": "The administrator can manage student information and other authorized portal data."
+    },
+    {
+        "id": 12,
+        "question": "How can I view upcoming events?",
+        "category": "Events",
+        "answer": "Upcoming events are available through the Events section of StudentHub."
+    },
+    {
+        "id": 13,
+        "question": "Can I search for an event?",
+        "category": "Events",
+        "answer": "Yes. The events page provides search and filtering options for available events."
+    },
+    {
+        "id": 14,
+        "question": "Can I change the website theme?",
+        "category": "General",
+        "answer": "Yes. StudentHub provides a light and dark theme switcher."
+    },
+    {
+        "id": 15,
+        "question": "Is StudentHub responsive?",
+        "category": "General",
+        "answer": "Yes. The StudentHub interface is designed to work across desktop, tablet and mobile screen sizes."
+    }
+]
