@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for StudentHub">
+    <title>StudentHub | Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="active">Register</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h1>Student Registration</h1>
+                <p>Create your StudentHub account.</p>
+            </div>
+
+
+            <div class="form-container">
+
+                <form class="form-card" action="#" method="post">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                required
+                                placeholder="Enter first name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                required
+                                placeholder="Enter last name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">College Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="student@example.com"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input
+                                type="tel"
+                                id="mobile"
+                                name="mobile"
+                                required
+                                placeholder="Enter mobile number"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="course">Course</label>
+
+                            <select id="course" name="course" required>
+                                <option value="">Select course</option>
+                                <option value="CSE">Computer Science and Engineering</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="CE">Computer Engineering</option>
+                                <option value="ECE">Electronics and Communication</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="year">Year</label>
+
+                            <select id="year" name="year" required>
+                                <option value="">Select year</option>
+                                <option value="1">First Year</option>
+                                <option value="2">Second Year</option>
+                                <option value="3">Third Year</option>
+                                <option value="4">Fourth Year</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                                minlength="8"
+                                placeholder="Enter password"
+                            >
+
+                            <span class="form-help">
+                                Minimum 8 characters.
+                            </span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                required
+                                minlength="8"
+                                placeholder="Confirm password"
+                            >
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="address">Address</label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                placeholder="Enter your address"
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button type="submit" class="btn btn-primary">
+                            Register
+                        </button>
+
+                        <a href="login.html" class="btn btn-outline">
+                            Already have an account?
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-container">
+
+        <section class="footer-section">
+            <h2>StudentHub</h2>
+            <p>College Student Portal</p>
+        </section>
+
+        <section class="footer-section">
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

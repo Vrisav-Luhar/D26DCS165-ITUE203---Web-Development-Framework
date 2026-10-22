@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub Student Dashboard">
+    <title>StudentHub | Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="site-nav" aria-label="Dashboard navigation">
+            <a href="index.html">Home</a>
+            <a href="student-dashboard.html" class="active">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="login.html">Logout</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-section">
+
+        <div class="container">
+
+            <header class="dashboard-header">
+                <h1>Student Dashboard</h1>
+                <p>
+                    Welcome back. Here you can access your academic
+                    information and student services.
+                </p>
+            </header>
+
+
+            <!-- Statistics -->
+            <section aria-labelledby="overview-title">
+
+                <h2 id="overview-title" class="section-title">
+                    Dashboard Overview
+                </h2>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <span class="stat-label">
+                            Attendance
+                        </span>
+
+                        <div class="stat-value">
+                            86%
+                        </div>
+                    </article>
+
+
+                    <article class="stat-card">
+                        <span class="stat-label">
+                            Current CGPA
+                        </span>
+
+                        <div class="stat-value">
+                            8.4
+                        </div>
+                    </article>
+
+
+                    <article class="stat-card">
+                        <span class="stat-label">
+                            Pending Leaves
+                        </span>
+
+                        <div class="stat-value">
+                            1
+                        </div>
+                    </article>
+
+
+                    <article class="stat-card">
+                        <span class="stat-label">
+                            Notifications
+                        </span>
+
+                        <div class="stat-value">
+                            3
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Dashboard Modules -->
+            <section class="page-section">
+
+                <div class="dashboard-grid">
+
+                    <article class="dashboard-card">
+
+                        <h2>Attendance</h2>
+
+                        <p>
+                            Overall attendance:
+                            <strong>86%</strong>
+                        </p>
+
+                        <br>
+
+                        <a href="#" class="btn btn-outline">
+                            View Attendance
+                        </a>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <h2>Results</h2>
+
+                        <p>
+                            Latest semester result:
+                            <strong>8.4 CGPA</strong>
+                        </p>
+
+                        <br>
+
+                        <a href="#" class="btn btn-outline">
+                            View Result
+                        </a>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <h2>Leave Requests</h2>
+
+                        <p>
+                            Submit a new leave request or track
+                            existing requests.
+                        </p>
+
+                        <br>
+
+                        <a href="#" class="btn btn-outline">
+                            Manage Leave
+                        </a>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <h2>Grievances</h2>
+
+                        <p>
+                            Submit a grievance and track its status.
+                        </p>
+
+                        <br>
+
+                        <a href="#" class="btn btn-outline">
+                            Manage Grievances
+                        </a>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <h2>Notifications</h2>
+
+                        <ul class="dashboard-list">
+                            <li>Exam timetable released</li>
+                            <li>Fee payment reminder</li>
+                            <li>Technical event registration open</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <h2>Student Documents</h2>
+
+                        <ul class="dashboard-list">
+                            <li>
+                                <a href="#">Fee Receipt</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Apply for Hall Ticket</a>
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Requests -->
+            <section>
+
+                <div class="section-title">
+                    <h2>Recent Requests</h2>
+                    <p>Track your latest submitted requests.</p>
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table class="data-table">
+
+                        <thead>
+                            <tr>
+                                <th>Request</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Leave Request</td>
+                                <td>28 August 2026</td>
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Grievance</td>
+                                <td>25 August 2026</td>
+                                <td>
+                                    <span class="badge badge-info">
+                                        In Review
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Hall Ticket</td>
+                                <td>20 August 2026</td>
+                                <td>
+                                    <span class="badge badge-success">
+                                        Approved
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-container">
+
+        <section class="footer-section">
+            <h2>StudentHub</h2>
+            <p>Student Dashboard</p>
+        </section>
+
+        <section class="footer-section">
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+                <a href="profile.html">Profile</a>
+                <a href="events.html">Events</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
