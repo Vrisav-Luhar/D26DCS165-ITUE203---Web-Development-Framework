@@ -1,0 +1,19 @@
+PRACTICAL 13 FIX
+
+The JavaScript CSRF token assignment in api-demo.php was malformed, which caused a JavaScript syntax error. This prevented the Fetch API demo from loading and sending create requests.
+
+FIXED LINE:
+const API_CSRF = '<?= $csrf ?>';
+
+INSTALL:
+1. Back up your existing C:\xampp\htdocs\StudentHub-13 folder.
+2. Extract this ZIP.
+3. Copy the contents of the included StudentHub-13 folder over your existing StudentHub-13 folder, allowing api-demo.php to be replaced.
+   Alternatively, replace only C:\xampp\htdocs\StudentHub-13\api-demo.php with this ZIP's api-demo.php.
+4. Ensure PHP file is saved as UTF-8.
+5. Open http://localhost/StudentHub-13/api-demo.php while logged in as Admin.
+6. Hard refresh with Ctrl+F5.
+7. Create a test event. It should show a status message and refresh the event list.
+8. Verify the same record appears at http://localhost/StudentHub-13/admin/events.php.
+
+The fix does not change the database or delete records.
