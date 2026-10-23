@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Aarav Patel",
+        "email": "aarav.patel@studenthub.edu",
+        "course": "B.Tech CSE",
+        "year": 3,
+        "department": "Computer Science",
+        "city": "Ahmedabad",
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "name": "Diya Shah",
+        "email": "diya.shah@studenthub.edu",
+        "course": "B.Tech IT",
+        "year": 2,
+        "department": "Information Technology",
+        "city": "Vadodara",
+        "status": "Active"
+    },
+    {
+        "id": 3,
+        "name": "Rohan Mehta",
+        "email": "rohan.mehta@studenthub.edu",
+        "course": "B.Tech CSE",
+        "year": 4,
+        "department": "Computer Science",
+        "city": "Surat",
+        "status": "Active"
+    },
+    {
+        "id": 4,
+        "name": "Ananya Desai",
+        "email": "ananya.desai@studenthub.edu",
+        "course": "B.Tech AIML",
+        "year": 3,
+        "department": "Artificial Intelligence",
+        "city": "Rajkot",
+        "status": "Active"
+    },
+    {
+        "id": 5,
+        "name": "Vivaan Joshi",
+        "email": "vivaan.joshi@studenthub.edu",
+        "course": "B.Tech CE",
+        "year": 1,
+        "department": "Computer Engineering",
+        "city": "Anand",
+        "status": "Active"
+    },
+    {
+        "id": 6,
+        "name": "Ishita Trivedi",
+        "email": "ishita.trivedi@studenthub.edu",
+        "course": "B.Tech CSE",
+        "year": 2,
+        "department": "Computer Science",
+        "city": "Nadiad",
+        "status": "Active"
+    },
+    {
+        "id": 7,
+        "name": "Aditya Shah",
+        "email": "aditya.shah@studenthub.edu",
+        "course": "B.Tech IT",
+        "year": 4,
+        "department": "Information Technology",
+        "city": "Ahmedabad",
+        "status": "Active"
+    },
+    {
+        "id": 8,
+        "name": "Myra Patel",
+        "email": "myra.patel@studenthub.edu",
+        "course": "B.Tech AIML",
+        "year": 2,
+        "department": "Artificial Intelligence",
+        "city": "Vadodara",
+        "status": "Active"
+    },
+    {
+        "id": 9,
+        "name": "Krish Solanki",
+        "email": "krish.solanki@studenthub.edu",
+        "course": "B.Tech CE",
+        "year": 3,
+        "department": "Computer Engineering",
+        "city": "Bharuch",
+        "status": "Active"
+    },
+    {
+        "id": 10,
+        "name": "Kiara Mehta",
+        "email": "kiara.mehta@studenthub.edu",
+        "course": "B.Tech CSE",
+        "year": 1,
+        "department": "Computer Science",
+        "city": "Surat",
+        "status": "Active"
+    },
+    {
+        "id": 11,
+        "name": "Arjun Desai",
+        "email": "arjun.desai@studenthub.edu",
+        "course": "B.Tech IT",
+        "year": 3,
+        "department": "Information Technology",
+        "city": "Vadodara",
+        "status": "Active"
+    },
+    {
+        "id": 12,
+        "name": "Meera Joshi",
+        "email": "meera.joshi@studenthub.edu",
+        "course": "B.Tech AIML",
+        "year": 4,
+        "department": "Artificial Intelligence",
+        "city": "Ahmedabad",
+        "status": "Active"
+    },
+    {
+        "id": 13,
+        "name": "Dhruv Patel",
+        "email": "dhruv.patel@studenthub.edu",
+        "course": "B.Tech CE",
+        "year": 2,
+        "department": "Computer Engineering",
+        "city": "Anand",
+        "status": "Active"
+    },
+    {
+        "id": 14,
+        "name": "Sara Shah",
+        "email": "sara.shah@studenthub.edu",
+        "course": "B.Tech CSE",
+        "year": 3,
+        "department": "Computer Science",
+        "city": "Rajkot",
+        "status": "Active"
+    },
+    {
+        "id": 15,
+        "name": "Yash Trivedi",
+        "email": "yash.trivedi@studenthub.edu",
+        "course": "B.Tech IT",
+        "year": 1,
+        "department": "Information Technology",
+        "city": "Nadiad",
+        "status": "Active"
+    }
+]

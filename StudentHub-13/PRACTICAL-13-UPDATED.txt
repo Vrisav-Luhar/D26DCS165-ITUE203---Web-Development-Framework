@@ -1,0 +1,16 @@
+STUDENTHUB PRACTICAL 13 — UPDATED DIAGNOSTIC VERSION
+
+1. Back up or rename your current StudentHub-13 folder.
+2. Extract this ZIP to C:\xampp\htdocs\ so the folder is C:\xampp\htdocs\StudentHub-13.
+3. Start Apache and MySQL.
+4. Log in as Admin: http://localhost/StudentHub-13/login.php
+5. Open http://localhost/StudentHub-13/db-check.php
+6. Confirm it reports database studenthub_db and the student/event counts.
+7. In phpMyAdmin, select exactly studenthub_db and compare:
+   SELECT COUNT(*) FROM students;
+   SELECT COUNT(*) FROM events;
+8. If counts differ, the app and phpMyAdmin are not querying the same MySQL instance/database. If they match, add a test record and check the counts again.
+9. Existing css/style.css and js/script.js are retained.
+
+No database tables are created or deleted by this update.
+This package has not been executed in the user's local XAMPP installation.
