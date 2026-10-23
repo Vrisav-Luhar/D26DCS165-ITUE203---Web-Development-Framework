@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="StudentHub student registration">
+
+    <title>Register - StudentHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Student<span>Hub</span>
+            </a>
+
+            <!-- Hamburger Button -->
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="page-header">
+            <div class="container">
+
+                <h1>Student Registration</h1>
+
+                <p>
+                    Create your StudentHub account by filling in the form below.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Registration Section -->
+        <section class="registration-section">
+
+            <div class="container">
+
+                <div class="form-card">
+
+                    <div class="form-heading">
+
+                        <h2>Create Your Account</h2>
+
+                        <p>
+                            All fields marked with
+                            <span class="required">*</span>
+                            are required.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Success Message -->
+                    <div
+                        id="registrationSuccess"
+                        class="success-message"
+                        role="status"
+                        aria-live="polite"
+                        hidden>
+                    </div>
+
+
+                    <!-- Registration Form -->
+                    <form
+                        id="registrationForm"
+                        novalidate>
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                minlength="3"
+                                maxlength="50"
+                                required
+                                aria-describedby="fullNameError">
+
+                            <small
+                                id="fullNameError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                autocomplete="email"
+                                required
+                                aria-describedby="emailError">
+
+                            <small
+                                id="emailError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Mobile Number -->
+                        <div class="form-group">
+
+                            <label for="mobile">
+                                Mobile Number
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                name="mobile"
+                                placeholder="Enter 10-digit mobile number"
+                                inputmode="numeric"
+                                maxlength="10"
+                                required
+                                aria-describedby="mobileError">
+
+                            <small
+                                id="mobileError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Course -->
+                        <div class="form-group">
+
+                            <label for="course">
+                                Course
+                                <span class="required">*</span>
+                            </label>
+
+                            <select
+                                id="course"
+                                name="course"
+                                required
+                                aria-describedby="courseError">
+
+                                <option value="">
+                                    -- Select Course --
+                                </option>
+
+                                <option value="B.Tech CSE">
+                                    B.Tech Computer Science Engineering
+                                </option>
+
+                                <option value="B.Tech IT">
+                                    B.Tech Information Technology
+                                </option>
+
+                                <option value="B.Tech AIML">
+                                    B.Tech Artificial Intelligence & Machine Learning
+                                </option>
+
+                                <option value="B.Tech CE">
+                                    B.Tech Computer Engineering
+                                </option>
+
+                            </select>
+
+                            <small
+                                id="courseError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Year -->
+                        <div class="form-group">
+
+                            <label for="year">
+                                Year
+                                <span class="required">*</span>
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required
+                                aria-describedby="yearError">
+
+                                <option value="">
+                                    -- Select Year --
+                                </option>
+
+                                <option value="1">
+                                    First Year
+                                </option>
+
+                                <option value="2">
+                                    Second Year
+                                </option>
+
+                                <option value="3">
+                                    Third Year
+                                </option>
+
+                                <option value="4">
+                                    Fourth Year
+                                </option>
+
+                            </select>
+
+                            <small
+                                id="yearError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Gender -->
+                        <fieldset class="form-group">
+
+                            <legend>
+                                Gender
+                                <span class="required">*</span>
+                            </legend>
+
+                            <div class="radio-group">
+
+                                <label class="radio-label">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Male">
+                                    Male
+                                </label>
+
+                                <label class="radio-label">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Female">
+                                    Female
+                                </label>
+
+                                <label class="radio-label">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Other">
+                                    Other
+                                </label>
+
+                            </div>
+
+                            <small
+                                id="genderError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </fieldset>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a strong password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required
+                                aria-describedby="passwordError passwordStrength">
+
+                            <!-- Password Strength -->
+                            <div class="password-strength">
+
+                                <div class="strength-bar">
+                                    <div
+                                        id="strengthFill"
+                                        class="strength-fill">
+                                    </div>
+                                </div>
+
+                                <span id="passwordStrength">
+                                    Password strength: Not entered
+                                </span>
+
+                            </div>
+
+                            <small
+                                id="passwordError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Re-enter your password"
+                                autocomplete="new-password"
+                                required
+                                aria-describedby="confirmPasswordError">
+
+                            <small
+                                id="confirmPasswordError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Terms -->
+                        <div class="form-group terms-group">
+
+                            <label class="checkbox-label">
+
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    required
+                                    aria-describedby="termsError">
+
+                                <span>
+                                    I agree to the
+                                    <a href="#" onclick="return false;">
+                                        Terms & Conditions
+                                    </a>
+                                    and confirm that the information provided
+                                    is correct.
+                                </span>
+
+                            </label>
+
+                            <small
+                                id="termsError"
+                                class="form-error"
+                                aria-live="polite">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Buttons -->
+                        <div class="form-actions">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+                                Create Account
+                            </button>
+
+                            <button
+                                type="reset"
+                                class="btn btn-secondary"
+                                id="resetRegistration">
+                                Reset
+                            </button>
+
+                        </div>
+
+
+                        <p class="login-link">
+                            Already have an account?
+                            <a href="login.html">Login here</a>
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 StudentHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
