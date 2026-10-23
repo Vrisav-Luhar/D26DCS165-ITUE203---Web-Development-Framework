@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "title": "TechFest 2026",
+        "category": "Technology",
+        "date": "2026-10-10",
+        "time": "10:00 AM",
+        "venue": "Main Auditorium",
+        "description": "Annual technology festival featuring competitions, exhibitions and technical activities.",
+        "organizer": "Department of Computer Science",
+        "status": "Open"
+    },
+    {
+        "id": 2,
+        "title": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-10-15",
+        "time": "11:00 AM",
+        "venue": "Computer Lab 1",
+        "description": "Hands-on workshop covering modern HTML, CSS and JavaScript development.",
+        "organizer": "Web Development Club",
+        "status": "Open"
+    },
+    {
+        "id": 3,
+        "title": "AI & Machine Learning Seminar",
+        "category": "Seminar",
+        "date": "2026-10-20",
+        "time": "2:00 PM",
+        "venue": "Seminar Hall",
+        "description": "Introduction to current applications and trends in Artificial Intelligence and Machine Learning.",
+        "organizer": "AI Club",
+        "status": "Open"
+    },
+    {
+        "id": 4,
+        "title": "Coding Competition",
+        "category": "Competition",
+        "date": "2026-10-25",
+        "time": "9:00 AM",
+        "venue": "Programming Lab",
+        "description": "Competitive programming event designed to test problem-solving and coding skills.",
+        "organizer": "Coding Club",
+        "status": "Open"
+    },
+    {
+        "id": 5,
+        "title": "Robotics Exhibition",
+        "category": "Exhibition",
+        "date": "2026-11-02",
+        "time": "10:30 AM",
+        "venue": "Innovation Centre",
+        "description": "Student robotics projects and prototypes will be demonstrated.",
+        "organizer": "Robotics Club",
+        "status": "Open"
+    },
+    {
+        "id": 6,
+        "title": "Cyber Security Awareness",
+        "category": "Seminar",
+        "date": "2026-11-07",
+        "time": "12:00 PM",
+        "venue": "Main Auditorium",
+        "description": "Awareness session covering common cyber threats and safe online practices.",
+        "organizer": "Cyber Security Cell",
+        "status": "Open"
+    },
+    {
+        "id": 7,
+        "title": "Cloud Computing Workshop",
+        "category": "Workshop",
+        "date": "2026-11-12",
+        "time": "10:00 AM",
+        "venue": "Computer Lab 2",
+        "description": "Practical introduction to cloud computing concepts and services.",
+        "organizer": "Cloud Computing Club",
+        "status": "Open"
+    },
+    {
+        "id": 8,
+        "title": "Entrepreneurship Summit",
+        "category": "Seminar",
+        "date": "2026-11-18",
+        "time": "11:00 AM",
+        "venue": "Conference Hall",
+        "description": "Interactive session focused on entrepreneurship, startups and innovation.",
+        "organizer": "Entrepreneurship Cell",
+        "status": "Open"
+    },
+    {
+        "id": 9,
+        "title": "Hackathon 2026",
+        "category": "Competition",
+        "date": "2026-11-25",
+        "time": "9:00 AM",
+        "venue": "Innovation Centre",
+        "description": "A 24-hour coding and innovation challenge for student teams.",
+        "organizer": "Developer Community",
+        "status": "Open"
+    },
+    {
+        "id": 10,
+        "title": "Data Science Workshop",
+        "category": "Workshop",
+        "date": "2026-12-02",
+        "time": "2:00 PM",
+        "venue": "Computer Lab 3",
+        "description": "Introduction to data analysis, visualization and data science tools.",
+        "organizer": "Data Science Club",
+        "status": "Open"
+    },
+    {
+        "id": 11,
+        "title": "Annual Sports Meet",
+        "category": "Sports",
+        "date": "2026-12-10",
+        "time": "8:00 AM",
+        "venue": "University Sports Ground",
+        "description": "Annual inter-department sports competition.",
+        "organizer": "Sports Committee",
+        "status": "Open"
+    },
+    {
+        "id": 12,
+        "title": "Cultural Festival",
+        "category": "Cultural",
+        "date": "2026-12-15",
+        "time": "5:00 PM",
+        "venue": "Open Air Theatre",
+        "description": "Cultural performances, music, dance and student activities.",
+        "organizer": "Cultural Committee",
+        "status": "Open"
+    },
+    {
+        "id": 13,
+        "title": "Placement Preparation Session",
+        "category": "Career",
+        "date": "2027-01-05",
+        "time": "10:00 AM",
+        "venue": "Seminar Hall",
+        "description": "Guidance session covering aptitude tests, interviews and resume preparation.",
+        "organizer": "Training and Placement Cell",
+        "status": "Open"
+    },
+    {
+        "id": 14,
+        "title": "Resume Building Workshop",
+        "category": "Career",
+        "date": "2027-01-12",
+        "time": "11:00 AM",
+        "venue": "Conference Hall",
+        "description": "Learn how to create an effective professional resume.",
+        "organizer": "Career Development Cell",
+        "status": "Open"
+    },
+    {
+        "id": 15,
+        "title": "Project Exhibition",
+        "category": "Exhibition",
+        "date": "2027-01-20",
+        "time": "10:00 AM",
+        "venue": "Main Building",
+        "description": "Final-year and semester project demonstrations by students.",
+        "organizer": "Faculty of Technology",
+        "status": "Open"
+    }
+]

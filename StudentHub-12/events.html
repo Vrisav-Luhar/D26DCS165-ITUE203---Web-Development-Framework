@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Events | StudentHub</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css">
+
+<script
+    src="js/script.js"
+    defer>
+</script>
+
+</head>
+
+
+<body>
+
+<a
+class="skip-link"
+href="#main-content">
+Skip to main content
+</a>
+
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<div class="brand-row">
+
+<div>
+
+<a
+class="brand"
+href="index.html">
+StudentHub
+</a>
+
+<p class="tagline">
+College Student Portal
+</p>
+
+</div>
+
+
+<div class="header-actions">
+
+<button
+id="themeToggle"
+class="theme-toggle"
+type="button">
+🌙 Dark Mode
+</button>
+
+<button
+id="menuToggle"
+class="menu-toggle"
+type="button"
+aria-controls="siteNav"
+aria-expanded="false">
+☰
+</button>
+
+</div>
+
+</div>
+
+
+<nav
+id="siteNav"
+class="site-nav"
+aria-label="Main navigation">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li>
+<a
+href="events.html"
+aria-current="page">
+Events
+</a>
+</li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contact.php">Contact</a></li>
+
+<li><a href="feedback.php">Feedback</a></li>
+
+<li><a href="login.php">Login</a></li>
+
+<li><a href="register.php">Register</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main id="main-content">
+
+
+<section class="page-section">
+
+<div class="container">
+
+<h1>
+College Events
+</h1>
+
+
+<div class="slider" id="eventSlider" aria-live="polite">
+    <article class="slide active-slide" id="databaseFeaturedSlide">
+        <h2>Loading events…</h2>
+        <p>Loading event records from the StudentHub database.</p>
+    </article>
+    <div class="slider-controls">
+        <button id="previousSlide" class="button secondary" type="button" disabled>Previous</button>
+        <span id="slideCounter">—</span>
+        <button id="nextSlide" class="button" type="button" disabled>Next</button>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="page-section">
+
+<div class="container">
+
+<p id="eventsStatus" role="status" aria-live="polite">Loading events from the database…</p>
+<div class="event-grid" id="databaseEventGrid"></div>
+
+</div>
+
+</section>
+
+
+<div
+id="eventModal"
+class="modal"
+role="dialog"
+aria-modal="true"
+aria-hidden="true"
+aria-labelledby="modalTitle">
+
+<div class="modal-dialog">
+
+<div class="modal-header">
+
+<h2 id="modalTitle">
+Event
+</h2>
+
+<button
+id="modalClose"
+class="modal-close"
+type="button"
+aria-label="Close modal">
+&times;
+</button>
+
+</div>
+
+<p id="modalContent"></p>
+
+</div>
+
+</div>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="footer-inner">
+
+<p>
+<strong>StudentHub</strong>
+— College Student Portal
+</p>
+
+<p>
+&copy; 2026 StudentHub.
+All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', async function () {
+    const grid = document.getElementById('databaseEventGrid');
+    const status = document.getElementById('eventsStatus');
+    const featured = document.getElementById('databaseFeaturedSlide');
+    const previous = document.getElementById('previousSlide');
+    const next = document.getElementById('nextSlide');
+    const counter = document.getElementById('slideCounter');
+    const modal = document.getElementById('eventModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    let events = [];
+    let currentSlide = 0;
+
+    function makeElement(tag, className, text) {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        if (text !== undefined) element.textContent = text;
+        return element;
+    }
+
+    function renderFeatured() {
+        featured.replaceChildren();
+        if (!events.length) {
+            featured.append(makeElement('h2', '', 'No events available'));
+            featured.append(makeElement('p', '', 'There are currently no events in the database.'));
+            counter.textContent = '0 / 0';
+            previous.disabled = true;
+            next.disabled = true;
+            return;
+        }
+        const event = events[currentSlide];
+        featured.append(makeElement('h2', '', event.title));
+        featured.append(makeElement('p', '', event.description || ''));
+        const details = [event.event_date, event.venue].filter(Boolean).join(' · ');
+        if (details) featured.append(makeElement('p', 'event-meta', details));
+        counter.textContent = (currentSlide + 1) + ' / ' + events.length;
+        previous.disabled = events.length < 2;
+        next.disabled = events.length < 2;
+    }
+
+    function renderCards() {
+        grid.replaceChildren();
+        if (!events.length) {
+            status.textContent = 'No events are currently available.';
+            return;
+        }
+        status.textContent = events.length + ' event(s) loaded from the database.';
+        events.forEach(function (event) {
+            const card = makeElement('article', 'card event-card');
+            if (event.poster_path) {
+                const image = makeElement('img', 'event-poster');
+                image.src = event.poster_path;
+                image.alt = 'Poster for ' + event.title;
+                image.loading = 'lazy';
+                image.style.maxWidth = '100%';
+                image.style.maxHeight = '180px';
+                image.style.objectFit = 'contain';
+                card.append(image);
+            }
+            card.append(makeElement('h2', '', event.title));
+            card.append(makeElement('p', '', event.description || ''));
+            const meta = [event.event_date, event.venue].filter(Boolean).join(' · ');
+            if (meta) card.append(makeElement('p', 'event-meta', meta));
+            const button = makeElement('button', 'button open-modal', 'View Details');
+            button.type = 'button';
+            button.dataset.eventId = String(event.event_id);
+            card.append(button);
+            grid.append(card);
+        });
+    }
+
+    previous.addEventListener('click', function () {
+        if (!events.length) return;
+        currentSlide = (currentSlide - 1 + events.length) % events.length;
+        renderFeatured();
+    });
+    next.addEventListener('click', function () {
+        if (!events.length) return;
+        currentSlide = (currentSlide + 1) % events.length;
+        renderFeatured();
+    });
+
+    grid.addEventListener('click', function (event) {
+        const button = event.target.closest('.open-modal');
+        if (!button) return;
+        const item = events.find(function (record) {
+            return String(record.event_id) === button.dataset.eventId;
+        });
+        if (!item) return;
+        modalTitle.textContent = item.title;
+        modalContent.textContent = [
+            item.description || '',
+            item.event_date ? 'Date and time: ' + item.event_date : '',
+            item.venue ? 'Venue: ' + item.venue : '',
+            item.capacity !== null ? 'Capacity: ' + item.capacity : ''
+        ].filter(Boolean).join('\n\n');
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+    });
+
+    function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+    }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeModal();
+    });
+
+    try {
+        const response = await fetch('api/events.php', {
+            headers: { 'Accept': 'application/json' },
+            cache: 'no-store'
+        });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const payload = await response.json();
+        if (!payload.success || !Array.isArray(payload.events)) {
+            throw new Error(payload.message || 'Unexpected response');
+        }
+        events = payload.events;
+        renderCards();
+        renderFeatured();
+    } catch (error) {
+        console.error('Unable to load StudentHub events:', error);
+        status.textContent = 'Events could not be loaded from the database. Make sure Apache and MySQL are running and open this page through localhost (not VS Code Live Server).';
+        grid.replaceChildren();
+        featured.replaceChildren();
+        featured.append(makeElement('h2', '', 'Unable to load events'));
+        featured.append(makeElement('p', '', 'Please check the PHP/MySQL connection.'));
+        counter.textContent = '—';
+    }
+});
+</script>
+
+</body>
+</html>
